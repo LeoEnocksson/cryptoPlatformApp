@@ -138,7 +138,13 @@ class _MyHomePageState extends State<MyHomePage> {
     ///Null means nothing in programming.
 
     ///Returns a container with a text widget representing the [serverTime].
-    return Container(child: Center(child: Text('Server time: ' + serverTime)));
+    return Container(
+        margin: EdgeInsets.all(10),
+        child: Center(
+            child: Text(
+          'Server time: ' + serverTime,
+          style: TextStyle(fontSize: 18),
+        )));
   }
 
   ///The widget [_avgPriceText] returns a [Text] Widget.
@@ -152,8 +158,20 @@ class _MyHomePageState extends State<MyHomePage> {
     return Container(
       child: Column(
         children: [
-          Text('Latest avg price: ' + latestAvgPrice.price),
-          Text('Latest avg mins: ' + '${latestAvgPrice.mins}'.toString()),
+          Container(
+            margin: EdgeInsets.all(10),
+            child: Text(
+              'Latest avg price: ' + latestAvgPrice.price,
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.all(10),
+            child: Text(
+              'Latest avg mins: ' + '${latestAvgPrice.mins}'.toString(),
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
         ],
       ),
     );
