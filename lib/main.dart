@@ -1,4 +1,3 @@
-import 'package:crypto_platform_app/backend/api.dart';
 import 'package:crypto_platform_app/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
